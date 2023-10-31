@@ -3,7 +3,6 @@ from tensorflow.keras.models import load_model
 import streamlit as st
 from PIL import ImageOps, Image
 import numpy as np
-import cv2
 
 # Name page title
 st.set_page_config(page_title="Rock Paper Scissors", layout="wide")
@@ -18,7 +17,7 @@ try:
     img_array = np.asarray(img)
 
     # Grayscale the image
-    gray = cv2.cvtColor(img_array, cv2.COLOR_BGR2GRAY)
+    gray = ImageOps.grayscale(img_array)
 
     x = np.expand_dims(gray, axis=0)
     images = np.vstack([x])
