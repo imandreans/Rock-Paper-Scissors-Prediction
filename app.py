@@ -14,12 +14,12 @@ try:
     )
     image = Image.open(file)
     img = ImageOps.fit(image, (224, 224))
-    img_array = np.asarray(img)
+    gray = ImageOps.grayscale(img)
+    img_array = np.asarray(gray)
 
     # Grayscale the image
-    gray = ImageOps.grayscale(img_array)
 
-    x = np.expand_dims(gray, axis=0)
+    x = np.expand_dims(img_array, axis=0)
     images = np.vstack([x])
 
     # get model
