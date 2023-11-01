@@ -14,11 +14,10 @@ try:
     )
     image = Image.open(file)
     img = ImageOps.fit(image, (224, 224))
-    gray = ImageOps.grayscale(img)
-    img_array = np.asarray(gray)
-
     # Grayscale the image
+    gray = ImageOps.grayscale(img)
 
+    img_array = np.asarray(gray)
     x = np.expand_dims(img_array, axis=0)
     images = np.vstack([x])
 
@@ -28,6 +27,7 @@ try:
 
     # Predict uploaded image with model
     classes = model.predict(images)
+
     if classes[0][0] == 1:
         st.info("It's Paper!")
     elif classes[0][1] == 1:
@@ -37,6 +37,7 @@ try:
     left_co, cent_co, last_co = st.columns(3)
     with cent_co:
         st.image(file)
+
 except:
     # Set error if image isn't uploded yet
     st.error("Please upload your hand!")
