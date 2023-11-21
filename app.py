@@ -1,5 +1,5 @@
 # Import library
-from tensorflow.keras.models import load_model
+from tensorflow import keras
 import streamlit as st
 from PIL import ImageOps, Image
 import numpy as np
@@ -23,7 +23,7 @@ try:
 
     # get model
     model_path = "chosen_model.hdf5"
-    model = load_model(model_path)
+    model = keras.models.load_model(model_path)
 
     # Predict uploaded image with model
     classes = model.predict(images)
