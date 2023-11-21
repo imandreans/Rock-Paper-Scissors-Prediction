@@ -14,7 +14,7 @@ Use Data Augmentation to make changes to training data. That way, the model can 
 | ----------- | ------ |
 | ![00nKV8oHuTGi20gq](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/224b0c39-2182-4ea4-93c1-cc2e3f762632)|![zoom-skewed-flip 1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/2be3c28b-d161-4a3b-a370-048ee2a48162)|
 # Modeling
-The convolutional Neural Network (CNN) is used to classify rock-paper-scissors hand pose. CNN has convolutional layers to get a pattern from the input image. This pattern is called feature maps.
+The convolutional Neural Network (CNN) is used to classify rock-paper-scissors hand pose. CNN has convolutional layers to get a pattern from the input image. This pattern is called feature maps. The image below contains an example of feature maps with scissors hand pose.
 
 ![conv_layer1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/f5992d04-e15a-4fc4-bc5d-56e6af15984d)
 
