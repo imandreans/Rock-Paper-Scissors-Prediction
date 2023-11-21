@@ -22,7 +22,7 @@ try:
     images = np.vstack([x])
 
     # get model
-    model_path = "model-20-0.9909.hdf5"
+    model_path = "chosen_model.hdf5"
     model = load_model(model_path)
 
     # Predict uploaded image with model
