@@ -6,7 +6,7 @@ import numpy as np
 
 # Name page title
 st.set_page_config(page_title="Rock Paper Scissors", layout="wide")
-st.title("Rock Paper Scissors Hand Pose Detection")
+st.title("Rock Paper Scissors Hand Pose Prediction")
 try:
     # Input image
     file = st.file_uploader(
