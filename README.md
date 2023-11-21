@@ -32,11 +32,11 @@ The graph above displays how well the model learned during training. In the seco
 
 ### Model from the last epoch
 
-**Model from last epoch** reach **98%** validation accuracy and **97%** on training accuracy(accuracy: 0.9726, val_accuracy: 0.9886).
+**Model from last epoch** reach **98%** validation accuracy and **97%** on training accuracy (accuracy: 0.9726, val_accuracy: 0.9886). The heatmap below shows the rest of the classified data.
 ![Untitled](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/a282433b-6219-4642-b194-1a6268317eb6)
 
 ### Model with the highest validation accuracy score
-**Saved model** reach **99%** on validation accuracy and **96%** on training accuracy (accuracy: 0.9665, val_accuracy: 0.9920).
+**Saved model** reach **99%** on validation accuracy and **96%** on training accuracy (accuracy: 0.9665, val_accuracy: 0.9920). The heatmap below shows the rest of the classified data.
 ![Untitled-1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/b5768079-79d5-4847-88ed-aa1b773e90e6)
 
 ## Analyze
@@ -58,13 +58,13 @@ Saved Model from last epoch correct guesses on validation data:
 
 ## Chosen Model
 From the performance,**the difference between training and validation accuracy is lower on a model from the last epoch than on a saved model**.
-<br><br>
+
 The difference in the accuracy of each model:
 
 **Saved model:** |0.9665 - 0.9920| = 0.0255
 
 **Model from the last epoch:** |0.9726 - 0.9886| = 0.016
-<br><br>
+
 High difference accuracy on the saved model might indicate overfitting. Therefore, **the model from the last epoch is chosen to predict unfamiliar data.**
 
 # Citation
