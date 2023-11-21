@@ -13,3 +13,5 @@
 # Citation
 A Rock-Paper-Scissors game using computer vision and machine learning on Raspberry Pi.
 By Julien de la Bruère-Terreault (drgfreeman@tuta.io). https://github.com/DrGFreeman/rps-cv/tree/master
+
+https://arxiv.org/abs/1312.4400v3
