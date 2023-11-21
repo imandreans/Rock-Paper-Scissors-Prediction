@@ -8,18 +8,18 @@ This dataset contains 2188 images, specifically 712 images of paper pose, 726 im
 ## Objective
 The creator of this dataset used a green screen to remove the background easily and take the hand pose only. How does the model classify input with differences, like position and size of hand pose?
 # Data Augmentation
-Using Data Augmentation to make changes to training data. That way, the model can be used to predict a variety of different images.
+Use Data Augmentation to make changes to training data. That way, the model can be used to predict a variety of images.
 | Before | After |
 | ----------- | ------ |
 | ![00nKV8oHuTGi20gq](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/224b0c39-2182-4ea4-93c1-cc2e3f762632)|![zoom-skewed-flip 1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/2be3c28b-d161-4a3b-a370-048ee2a48162)|
 # Modeling
-The convolutional Neural Network (CNN) is used to classify rock-paper-scissors hand pose. CNN has layers called convolutional layers to get a pattern from the input image. This pattern is called feature maps.
+The convolutional Neural Network (CNN) is used to classify rock-paper-scissors hand pose. CNN has convolutional layers to get a pattern from the input image. This pattern is called feature maps.
 
 ![conv_layer1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/f5992d04-e15a-4fc4-bc5d-56e6af15984d)
 
-But, instead of using a Fully connected layer, this CNN model uses Global Max Pooling to prevent overfitting by getting the maximum pixel value from each feature map and sending it directly to the output layer. Another layer is global average pooling, which takes the average pixel value of each feature map.
+But, instead of a Fully connected layer, this CNN model uses Global Max Pooling to prevent overfitting by getting the maximum pixel value from each feature map and sending it directly to the output layer. Another layer is global average pooling, which takes the average pixel value of each feature map.
 
-Lastly, to get a model with good performance, the model checkpoint is used to get the desirable model based on the metric that is monitored. The model with a great metric score compared to the model from the previous method will be saved.
+Lastly, to get a model with good performance, the model checkpoint is used to get the desirable model. The model with a great monitored metric score compared to the model from the previous method will be saved.
 
 # Result
 ## Training Performance
@@ -39,7 +39,7 @@ The graph displays how well the model learned during training. In the second rou
 ![Untitled-1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/b5768079-79d5-4847-88ed-aa1b773e90e6)
 
 ## Analyze
-even though the saved model has the highest validation accuracy, when we compare each model's confusion matrix, **the model from the last epoch has the most correct guesses than saved models on training data.**
+Even though the saved model has the highest validation accuracy, when we compare each model's confusion matrix, **the model from the last epoch has the most correct guesses than saved models on training data.**
 
 Model from last epoch correct guesses on training data:
 **(Paper:420, Rock:420, Scissors:444)**
@@ -47,7 +47,7 @@ Model from last epoch correct guesses on training data:
 Saved Model from last epoch correct guesses on training data:
 **(Paper:409, Rock:430, Scissors:422)**
 <br><br>
-On validation data, **saved model guess correctly more on paper and rock.** while **model from last epoch only guesses correctly more on scissors**.
+In validation data, **saved model guess correctly more on paper and rock.** while **model from last epoch only guesses correctly more on scissors**.
 <br><br>
 Model from last epoch correct guesses on validation data:
 **(Paper:279, Rock:287, Scissors:300)**
@@ -56,7 +56,7 @@ Saved Model from last epoch correct guesses on validation data:
 **(Paper: 282, Rock:289, Scissors:298)**
 
 ## Chosen Model
-From the performance,**the difference between training accuracy and validation accuracy is lower on a model from the last epoch than on a saved model**.
+From the performance,**the difference between training and validation accuracy is lower on a model from the last epoch than on a saved model**.
 <br><br>
 The difference in the accuracy of each model:
 
@@ -64,7 +64,7 @@ The difference in the accuracy of each model:
 
 **Model from the last epoch:** |0.9726 - 0.9886| = 0.016
 <br><br>
-High difference accuracy on the saved model might indicate overfitting. Therefore, **the model from the last epoch is chosen as a model to predict unfamiliar data.**
+High difference accuracy on the saved model might indicate overfitting. Therefore, **the model from the last epoch is chosen to predict unfamiliar data.**
 
 # Citation
 A Rock-Paper-Scissors game using computer vision and machine learning on Raspberry Pi.
