@@ -7,7 +7,7 @@ This dataset contains 2188 images, specifically 712 images of paper pose, 726 im
 ![rock pose](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/6da7b213-9255-4be0-af30-0d179ddea096)
 ![scissors pose](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/914edcd8-ea6f-4832-99fc-ee7bee80b929)
 ## Objective
-The creator of this dataset used a green screen to remove the background easily and take the hand pose only. How does the model classify input with differences, like position and size of hand pose?
+Make a model that can classify a rock-paper-scissors hand pose with Convolutional Neural Network.
 # Data Augmentation
 Use Data Augmentation to make changes to training data. That way, the model can be used to predict a variety of images. The table below shows an example of an image before and after data augmentation.
 
