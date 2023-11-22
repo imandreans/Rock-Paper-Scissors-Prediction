@@ -10,8 +10,11 @@ This dataset contains 2188 images, specifically 712 images of paper pose, 726 im
 The creator of this dataset used a green screen to remove the background easily and take the hand pose only. How does the model classify input with differences, like position and size of hand pose?
 # Data Augmentation
 Use Data Augmentation to make changes to training data. That way, the model can be used to predict a variety of images. The table below shows an example of an image before and after data augmentation.
-| Before | After |
-| ----------- | ------ |
+
+The dataset is also grayscaled to reduce the complexity of color dimensions. Not only that, the input image background doesn't have to be green to be classified easily.
+
+| Before | After | After Grayscale |
+| ------- | ------ |------ |
 | ![rock pose before augmentation](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/224b0c39-2182-4ea4-93c1-cc2e3f762632)|![rock pose after augmentation](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/2be3c28b-d161-4a3b-a370-048ee2a48162)|
 # Modeling
 The convolutional Neural Network (CNN) is used to classify rock-paper-scissors hand pose. CNN has convolutional layers to get a pattern from the input image. This pattern is called feature maps. The image below contains an example of feature maps with scissors hand pose.
