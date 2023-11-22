@@ -15,8 +15,7 @@ The dataset is also grayscaled to reduce the complexity of color dimensions. Not
 
 | Before | After Augmentation | After Grayscale |
 | ------- | ------ |------ |
-| ![rock pose before augmentation](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/224b0c39-2182-4ea4-93c1-cc2e3f762632)|![rock pose after augmentation](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/2be3c28b-d161-4a3b-a370-048ee2a48162)| ![grayzoom-skewed-flip 1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/859e2bfe-06f4-4adc-87ef-a594e0a7176d)
-|
+| ![rock pose before augmentation](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/224b0c39-2182-4ea4-93c1-cc2e3f762632)|![rock pose after augmentation](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/2be3c28b-d161-4a3b-a370-048ee2a48162)| ![grayzoom-skewed-flip 1](https://github.com/imandreans/Rock-Paper-Scissors-Prediction/assets/69078720/859e2bfe-06f4-4adc-87ef-a594e0a7176d)|
 
 # Modeling
 The convolutional Neural Network (CNN) is used to classify rock-paper-scissors hand pose. CNN has convolutional layers to get a pattern from the input image. This pattern is called feature maps. The image below contains an example of feature maps with a rock hand pose.
